@@ -1,0 +1,142 @@
+# Python Analysis – Employee Attrition & Workforce Analytics
+
+## 📊 Overview
+
+This folder contains the **Python analysis** for the Employee Attrition and Workforce Analytics project.
+
+Python and Pandas were used to inspect, clean, analyze, and prepare the employee dataset for further analysis and visualization.
+
+---
+
+## 🛠️ Tools Used
+
+* Python
+* Pandas
+* Jupyter Notebook
+* Matplotlib
+
+---
+
+## 📓 Notebook
+
+The main analysis is contained in:
+
+```text
+Employee_Attrition_Analysis.ipynb
+```
+
+The notebook documents the data analysis process from initial inspection through exploratory analysis.
+
+---
+
+## 🔄 Analysis Workflow
+
+The Python analysis follows these main steps:
+
+### 1. Import Libraries
+
+Python libraries required for data analysis and visualization were imported.
+
+### 2. Load Dataset
+
+The raw employee dataset was loaded into a Pandas DataFrame.
+
+### 3. Data Inspection
+
+The dataset was inspected using:
+
+* `head()`
+* `info()`
+* `describe()`
+* `shape`
+* `dtypes`
+
+This helped understand the structure and characteristics of the dataset.
+
+### 4. Data Quality Checks
+
+The dataset was checked for:
+
+* Missing values
+* Duplicate records
+* Incorrect data types
+* Inconsistent values
+
+### 5. Data Cleaning
+
+The data was prepared for analysis by addressing identified data-quality issues and creating a cleaned dataset.
+
+### 6. Exploratory Data Analysis
+
+The dataset was explored to understand patterns related to:
+
+* Employee attrition
+* Departments
+* Job levels
+* Monthly income
+* Job satisfaction
+* Work-life balance
+* Overtime
+* Performance ratings
+* Training hours
+* Years at company
+
+### 7. Business Analysis
+
+The analysis was used to identify workforce patterns and potential factors associated with employee attrition.
+
+---
+
+## 📈 Key Analysis Areas
+
+The Python notebook investigates questions such as:
+
+* What is the distribution of employee attrition?
+* Which departments have the most employees?
+* Which job levels have higher attrition?
+* How does overtime relate to employee turnover?
+* How does job satisfaction compare across employees?
+* What is the relationship between monthly income and attrition?
+* How do years at the company differ between employees who stayed and left?
+
+---
+
+## 📂 Folder Structure
+
+```text
+Python/
+│
+├── Employee_Attrition_Analysis.ipynb
+└── README.md
+```
+
+---
+
+## 🎯 Outcome
+
+The Python analysis produced a cleaned and analyzed dataset that could be used for:
+
+* SQL analysis
+* Power BI dashboards
+* Tableau dashboards
+* Business insights
+* Workforce analytics
+
+---
+
+## 📌 Skills Demonstrated
+
+* Python
+* Pandas
+* Data Cleaning
+* Exploratory Data Analysis
+* Data Quality Validation
+* Statistical Analysis
+* Data Visualization
+* Business Analytics
+
+---
+
+## 🔗 Related Project
+
+This Python analysis is part of the **Employee Attrition and Workforce Analytics** project, which also includes SQL analysis, Power BI, Tableau, and business recommendations.
