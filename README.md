@@ -1,175 +1,320 @@
-# Employee Attrition and Workforce Analytics
+# Employee Attrition & Workforce Analytics
 
 ## 📊 Project Overview
 
-This project focuses on analyzing employee attrition and workforce patterns using data analytics techniques. The goal is to understand employee turnover, identify factors associated with attrition, and provide meaningful business insights that can support workforce planning and retention strategies.
+This project analyzes employee attrition and workforce patterns using a dataset of **10,000 employee records**.
 
-The project follows a complete data analytics workflow, from raw data preparation and cleaning to SQL analysis and interactive dashboard development.
+The goal is to identify the key factors associated with employee turnover and provide data-driven insights that can help organizations understand workforce trends and support employee retention strategies.
 
-## 🎯 Project Objectives
+The project covers the complete data analytics workflow:
 
-* Analyze overall employee attrition.
-* Understand workforce distribution across departments.
-* Identify factors associated with employees leaving the organization.
-* Analyze employee satisfaction and work-life balance.
-* Examine the relationship between overtime and attrition.
-* Analyze income, job level, years at company, and other workforce characteristics.
-* Create interactive dashboards to communicate findings.
-* Provide actionable business insights based on the analysis.
-
-## 🗂️ Dataset
-
-The project uses an employee attrition and workforce analytics dataset containing **10,000 employee records and 14 columns**.
-
-Key fields include:
-
-* Employee ID
-* Age
-* Department
-* Job Level
-* Years at Company
-* Monthly Income
-* Job Satisfaction
-* Work-Life Balance
-* Overtime
-* Distance From Home
-* Promotion Last 5 Years
-* Performance Rating
-* Training Hours Last Year
-* Attrition
-
-Two versions of the dataset are included:
-
-* **Raw Dataset** — original dataset before analysis.
-* **Cleaned Dataset** — dataset prepared and cleaned using Python and Pandas.
-
-## 🛠️ Tools & Technologies
-
-* **Python**
-* **Pandas**
-* **Jupyter Notebook**
-* **SQL**
-* **Power BI**
-* **Tableau**
-* **GitHub**
-
-## 🔄 Project Workflow
-
-```text
-Raw Dataset
-     ↓
-Data Inspection
-     ↓
-Data Cleaning with Python/Pandas
-     ↓
-Clean Dataset
-     ↓
-SQL Analysis
-     ↓
-Power BI Dashboard
-     ↓
-Tableau Dashboard
-     ↓
-Business Insights & Recommendations
-```
-
-## 📈 Power BI Dashboard
-
-The Power BI report contains two pages:
-
-### 1. Workforce Overview
-
-Provides a high-level view of the workforce, including:
-
-* Total employees
-* Employees who left
-* Attrition rate
-* Average monthly income
-* Employee distribution by department
-* Workforce-related analysis
-
-### 2. Detailed Attrition Analysis
-
-Provides a deeper analysis of employee attrition and explores factors such as:
-
-* Department
-* Job level
-* Overtime
-* Job satisfaction
-* Work-life balance
-* Years at company
-* Other workforce characteristics
-
-## 📊 Tableau Dashboard
-
-A Tableau version of the analysis will also be developed to demonstrate dashboarding and visualization skills using another business intelligence platform.
-
-## 💡 Business Insights
-
-The analysis is designed to identify patterns in employee attrition and highlight areas that may require management attention.
-
-Key insights and recommendations will be documented as the analysis is completed.
-
-## 📁 Project Structure
-
-```text
-Employee-Attrition-Workforce-Analytics/
-│
-├── Dataset/
-│   ├── Raw_Employee_Attrition.csv
-│   └── Cleaned_Employee_Attrition.csv
-│
-├── Python/
-│   └── Employee_Attrition_Analysis.ipynb
-│
-├── SQL/
-│   └── Employee_Attrition_Analysis.sql
-│
-├── PowerBI/
-│   └── Employee_Attrition_Workforce_Analytics.pbix
-│
-├── Tableau/
-│   └── Employee_Attrition_Workforce_Analytics.twbx
-│
-├── Screenshots/
-│   ├── PowerBI_Workforce_Overview.png
-│   ├── PowerBI_Detailed_Attrition_Analysis.png
-│   ├── Tableau_Dashboard_1.png
-│   └── Tableau_Dashboard_2.png
-│
-├── Insights/
-│   └── Business_Insights.md
-│
-└── README.md
-```
-
-## 🚀 Skills Demonstrated
-
-This project demonstrates practical skills in:
-
-* Data cleaning and preprocessing
-* Exploratory data analysis
-* Python and Pandas
-* SQL querying
-* Data visualization
-* Power BI dashboard development
-* Tableau dashboard development
-* Business analysis
-* Data storytelling
-* GitHub project organization
-
-## 👨‍💻 Project Status
-
-**Power BI Dashboard:** ✅ Completed
-
-**Python Analysis:** ✅ Completed
-
-**SQL Analysis:** ✅ Completed
-
-**Tableau Dashboard:** 🔄 In Progress
-
-**Business Insights:** 🔄 In Progress
+**Data Inspection → Data Cleaning → Exploratory Data Analysis → SQL Analysis → Power BI → Tableau → Machine Learning**
 
 ---
 
-*This project was created as part of my data analytics portfolio to demonstrate practical skills in transforming raw workforce data into meaningful business insights.*
+## 🎯 Business Objectives
+
+The main objectives of this project were to:
+
+* Analyze the overall employee attrition rate.
+* Identify departments with higher employee turnover.
+* Investigate the relationship between overtime and attrition.
+* Analyze attrition across different job levels.
+* Examine job satisfaction and work-life balance.
+* Investigate the relationship between income and employee attrition.
+* Analyze how years at the company relate to attrition.
+* Identify workforce patterns that may help organizations improve employee retention.
+* Build dashboards and machine learning models to support data-driven analysis.
+
+---
+
+## 📁 Dataset
+
+The dataset contains **10,000 employee records** and **14 columns**.
+
+### Main Features
+
+| Feature               | Description                                   |
+| --------------------- | --------------------------------------------- |
+| EmployeeID            | Unique employee identifier                    |
+| Age                   | Employee age                                  |
+| Department            | Employee department                           |
+| JobLevel              | Employee job level                            |
+| YearsAtCompany        | Number of years at the company                |
+| MonthlyIncome         | Monthly employee income                       |
+| JobSatisfaction       | Job satisfaction rating                       |
+| WorkLifeBalance       | Work-life balance rating                      |
+| Overtime              | Whether the employee works overtime           |
+| DistanceFromHome      | Distance from home                            |
+| PromotionLast5Years   | Promotion received within the last five years |
+| PerformanceRating     | Employee performance rating                   |
+| TrainingHoursLastYear | Training hours completed                      |
+| Attrition             | Whether the employee left the company         |
+
+---
+
+## 🧹 Data Inspection & Cleaning
+
+The dataset was inspected and prepared before analysis.
+
+The data preparation process included:
+
+* Checking dataset dimensions.
+* Inspecting column names and data types.
+* Reviewing descriptive statistics.
+* Checking for missing values.
+* Checking for duplicate records.
+* Validating categorical and numerical fields.
+* Checking data consistency.
+* Removing unnecessary or invalid data where required.
+* Preparing the cleaned dataset for analysis and visualization.
+
+A separate data cleaning and validation report was also created.
+
+---
+
+## 🔎 Exploratory Data Analysis
+
+Exploratory Data Analysis was performed using **Python, Pandas, NumPy and Matplotlib**.
+
+The analysis investigated:
+
+* Overall employee attrition.
+* Attrition by department.
+* Attrition by job level.
+* Attrition by overtime.
+* Attrition by job satisfaction.
+* Attrition by work-life balance.
+* Attrition by income group.
+* Attrition by years at the company.
+* Attrition by performance rating.
+* Attrition by promotion history.
+
+---
+
+## 📌 Key Findings
+
+### Overall Attrition
+
+* **Total Employees:** 10,000
+* **Employees Who Left:** 903
+* **Overall Attrition Rate:** **9.03%**
+
+### Department
+
+Engineering recorded the highest attrition rate at approximately **9.58%**, while HR recorded the lowest at approximately **7.27%**.
+
+### Overtime
+
+Employees working overtime had a higher attrition rate:
+
+* **Overtime: Yes — 12.18%**
+* **Overtime: No — 7.78%**
+
+### Job Level
+
+Job Level 1 recorded the highest attrition rate at approximately **11.22%**, while Job Level 4 had the lowest at approximately **5.04%**.
+
+### Job Satisfaction
+
+Employees with a job satisfaction rating of **2** recorded the highest attrition rate at approximately **16.63%**.
+
+### Work-Life Balance
+
+Employees with a work-life balance rating of **2** had an attrition rate of approximately **12.18%**, compared with approximately **6.86%** for rating 4.
+
+### Income
+
+Employees earning between **3,000 and 5,999** had an attrition rate of approximately **11.15%**, while employees earning **9,000+** had an attrition rate of approximately **7.28%**.
+
+### Years at Company
+
+Employees with **0–2 years** at the company had an attrition rate of approximately **10.60%**, compared with approximately **5.90%** for employees with **11+ years**.
+
+---
+
+# 🗄️ SQL Analysis
+
+**MySQL** was used to perform structured workforce analysis and calculate business metrics.
+
+SQL analysis included:
+
+* Total employee counts.
+* Employees who left.
+* Attrition rates.
+* Department analysis.
+* Job-level analysis.
+* Overtime analysis.
+* Job satisfaction analysis.
+* Work-life balance analysis.
+* Income analysis.
+* Tenure analysis.
+
+---
+
+# 📈 Power BI Dashboard
+
+A Power BI report was created with two pages:
+
+### Workforce Overview
+
+The dashboard includes:
+
+* Total Employees
+* Employees Left
+* Attrition Rate
+* Average Monthly Income
+* Employees by Department
+* Employees Left by Department
+* Overtime Analysis
+* Job Level Analysis
+* Job Satisfaction
+* Work-Life Balance
+
+### Detailed Attrition Analysis
+
+The second page provides detailed analysis of:
+
+* Employees Left by Performance Rating
+* Employees Left by Overtime
+* Employees Left by Department
+* Employees Left by Years at Company
+* Employees Left by Promotion History
+
+---
+
+# 📊 Tableau Dashboard
+
+A Tableau dashboard was created to provide another interactive view of employee attrition.
+
+The dashboard includes analysis of:
+
+* Employees by Department
+* Employees Who Stayed vs Left
+* Employee Count by Overtime
+* Attrition by Job Satisfaction
+* Attrition by Work-Life Balance
+* Attrition by Job Level
+
+---
+
+# 🤖 Machine Learning
+
+Machine learning was applied to explore employee attrition prediction.
+
+The workflow included:
+
+* Feature preparation.
+* Encoding categorical variables.
+* Preparing training and testing datasets.
+* Model training.
+* Model evaluation.
+* Confusion matrix analysis.
+
+### Models Used
+
+* Logistic Regression
+* Random Forest
+
+The models were evaluated using classification performance metrics, including accuracy and confusion matrices.
+
+---
+
+# 🛠️ Tools & Technologies
+
+### Programming & Analysis
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Scikit-learn
+
+### Database
+
+* MySQL
+* MySQL Workbench
+
+### Visualization
+
+* Microsoft Excel
+* Power BI
+* Tableau
+
+### Machine Learning
+
+* Logistic Regression
+* Random Forest
+
+---
+
+# 📂 Project Structure
+
+```text
+employee-attrition-workforce-analytics/
+│
+├── README.md
+│
+├── data/
+│   ├── raw_dataset.csv
+│   └── cleaned_dataset.csv
+│
+├── python/
+│   └── employee_attrition_analysis.ipynb
+│
+├── sql/
+│   └── employee_attrition_analysis.sql
+│
+├── powerbi/
+│   └── dashboard_screenshots/
+│
+├── tableau/
+│   └── dashboard_screenshots/
+│
+├── machine_learning/
+│   └── employee_attrition_ml.ipynb
+│
+└── reports/
+    └── data_cleaning_eda_report.pdf
+```
+
+---
+
+# 💡 Business Insights
+
+The analysis indicates that employee attrition is associated with several workforce factors, particularly:
+
+* Overtime.
+* Job satisfaction.
+* Work-life balance.
+* Job level.
+* Income.
+* Early tenure.
+
+These findings can help organizations identify workforce groups that may require additional attention and develop targeted employee retention strategies.
+
+---
+
+# 📌 Conclusion
+
+This project demonstrates an end-to-end **Data Analytics and Machine Learning workflow**, from raw data inspection and cleaning through exploratory analysis, SQL, business intelligence dashboards, and predictive modeling.
+
+The project demonstrates practical experience with:
+
+**Python | SQL | Excel | Power BI | Tableau | Machine Learning**
+
+It also demonstrates the ability to transform raw workforce data into meaningful business insights and visual reports.
+
+---
+
+## 👤 Author
+
+**Malesela Kate Rapolai**
+
+Aspiring Data Analyst | Data Science
+
+**Skills:** Python • SQL • Excel • Power BI • Tableau • Machine Learning
+
+---
+
+⭐ If you find this project useful, feel free to explore the repository and review the analysis, dashboards, and machine learning workflow.
